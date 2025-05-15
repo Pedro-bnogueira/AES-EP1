@@ -1,0 +1,8 @@
+Variável,Métrica,Teste,Estat,p_valor
+Experiência,erros,Spearman,0.083,0.40001
+Experiência,design,Spearman,-0.058,0.55912
+KN Ref,erros,Spearman,0.141,0.12349
+KN Ref,design,Spearman,0.027,0.77213
+KN Java,erros,Spearman,-0.043,0.63995
+KN Java,design,Spearman,-0.052,0.57438
+Experiência (cat),Erros,Kruskal,,
