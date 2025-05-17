@@ -26,6 +26,7 @@ import pandas as pd
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 import math
+from scipy.stats import levene
 
 # Configuração de caminhos
 metrics_csv = Path("./coleta.csv")
@@ -71,10 +72,13 @@ def descriptive_stats(df: pd.DataFrame) -> pd.DataFrame:
             n=("tempo_h", "count"),
             tempo_medio=("tempo_h", "mean"),
             tempo_dp=("tempo_h", "std"),
+            tempo_mediana=("tempo_h", "median"),
             erros_medio=("erros", "mean"),
             erros_dp=("erros", "std"),
+            erros_mediana=("erros", "median"),
             design_medio=("design", "mean"),
             design_dp=("design", "std"),
+            design_mediana=("design", "median"),
         )
         .round(3)
     )
@@ -94,10 +98,18 @@ def hypothesis_tests(df: pd.DataFrame) -> pd.DataFrame:
         p_trad = stats.shapiro(grp_trad).pvalue
         normal = (p_smart > 0.05) and (p_trad > 0.05)
 
-        if normal:
-            stat, pval = stats.ttest_ind(grp_smart, grp_trad, equal_var=False)
-            test_name = "t (Welch)"
-            effect = abs(grp_smart.mean() - grp_trad.mean()) / math.sqrt((grp_smart.var(ddof=1)+grp_trad.var(ddof=1))/2)
+        # Verificar homogeneidade das variâncias com o teste de Levene
+        stat_lev, p_lev = levene(grp_smart, grp_trad)
+        igual_var = (p_lev > 0.05)
+
+        if normal and igual_var:
+            # t de Student clássico
+            stat, pval = stats.ttest_ind(grp_smart, grp_trad, equal_var=True)
+            test_name = "t de Student"
+            # Cohen’s d
+            effect = abs(grp_smart.mean() - grp_trad.mean()) / math.sqrt(
+                (grp_smart.var(ddof=1) + grp_trad.var(ddof=1)) / 2
+            )
         else:
             stat, pval = stats.mannwhitneyu(grp_smart, grp_trad, alternative="two-sided")
             test_name = "Mann–Whitney"

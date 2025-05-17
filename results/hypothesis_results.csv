@@ -1,4 +1,4 @@
 Métrica,Teste,Estatística,p_valor,Normal?,Efeito
-Tempo (h),t (Welch),-6.357,0.0,True,1.161
+Tempo (h),t de Student,-6.357,0.0,True,1.161
 Erros Funcionais,Mann–Whitney,697.0,0.0,False,0.543
 Problemas de Design,Mann–Whitney,986.0,2e-05,False,0.394
