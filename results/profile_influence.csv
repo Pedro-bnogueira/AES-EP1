@@ -1,8 +1,9 @@
-Variável,Métrica,Teste,Estat,p_valor
-Experiência,erros,Spearman,0.083,0.40001
-Experiência,design,Spearman,-0.058,0.55912
-KN Ref,erros,Spearman,0.141,0.12349
-KN Ref,design,Spearman,0.027,0.77213
-KN Java,erros,Spearman,-0.043,0.63995
-KN Java,design,Spearman,-0.052,0.57438
-Experiência (cat),Erros,Kruskal,,
+Variável ordinal,Métrica,Teste,Coeficiente,p_valor
+Experiência,Erros,Spearman ρ,0.083,0.40001
+Experiência,Design,Spearman ρ,-0.058,0.55912
+Conhecimento Refatoração,Erros,Spearman ρ,0.141,0.12349
+Conhecimento Refatoração,Design,Spearman ρ,0.027,0.77213
+Conhecimento Java,Erros,Spearman ρ,-0.043,0.63995
+Conhecimento Java,Design,Spearman ρ,-0.052,0.57438
+Experiência (categorias),Erros,Kruskal‑Wallis,0.979,0.61295
+Experiência (categorias),Design,Kruskal‑Wallis,0.351,0.83906
