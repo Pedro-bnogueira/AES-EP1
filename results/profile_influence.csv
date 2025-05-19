@@ -1,9 +1,34 @@
-Variável ordinal,Métrica,Teste,Coeficiente,p_valor
-Experiência,Erros,Spearman ρ,0.083,0.40001
-Experiência,Design,Spearman ρ,-0.058,0.55912
-Conhecimento Refatoração,Erros,Spearman ρ,0.141,0.12349
-Conhecimento Refatoração,Design,Spearman ρ,0.027,0.77213
-Conhecimento Java,Erros,Spearman ρ,-0.043,0.63995
-Conhecimento Java,Design,Spearman ρ,-0.052,0.57438
-Experiência (categorias),Erros,Kruskal‑Wallis,0.979,0.61295
-Experiência (categorias),Design,Kruskal‑Wallis,0.351,0.83906
+Variável,Métrica,Teste,Estatística,p_valor
+Experiência,tempo_h,Spearman ρ,-0.03,0.76349
+Experiência,erros,Spearman ρ,0.083,0.40001
+Experiência,design,Spearman ρ,-0.058,0.55912
+Conhecimento Refatoração,tempo_h,Spearman ρ,-0.013,0.88669
+Conhecimento Refatoração,erros,Spearman ρ,0.141,0.12349
+Conhecimento Refatoração,design,Spearman ρ,0.027,0.77213
+Conhecimento Java,tempo_h,Spearman ρ,-0.075,0.41587
+Conhecimento Java,erros,Spearman ρ,-0.043,0.63995
+Conhecimento Java,design,Spearman ρ,-0.052,0.57438
+Formação,tempo_h,Kruskal–Wallis,0.576,0.74971
+Formação,erros,Kruskal–Wallis,1.127,0.56926
+Formação,design,Kruskal–Wallis,0.697,0.70562
+Experiência,tempo_h,Kruskal–Wallis,0.641,0.887
+Experiência,erros,Kruskal–Wallis,3.011,0.38999
+Experiência,design,Kruskal–Wallis,1.302,0.72867
+Conhecimento Refatoração,tempo_h,Kruskal–Wallis,1.837,0.60689
+Conhecimento Refatoração,erros,Kruskal–Wallis,3.978,0.26383
+Conhecimento Refatoração,design,Kruskal–Wallis,1.429,0.69885
+Conhecimento Java,tempo_h,Kruskal–Wallis,2.029,0.56649
+Conhecimento Java,erros,Kruskal–Wallis,5.074,0.16649
+Conhecimento Java,design,Kruskal–Wallis,1.272,0.73586
+Gênero,tempo_h,Kruskal–Wallis,0.783,0.67608
+Gênero,erros,Kruskal–Wallis,0.829,0.66072
+Gênero,design,Kruskal–Wallis,1.641,0.44031
+Faixa Etária,tempo_h,Kruskal–Wallis,2.391,0.49533
+Faixa Etária,erros,Kruskal–Wallis,5.683,0.1281
+Faixa Etária,design,Kruskal–Wallis,1.142,0.76685
+Área de Atuação,tempo_h,Kruskal–Wallis,2.301,0.31644
+Área de Atuação,erros,Kruskal–Wallis,4.142,0.12606
+Área de Atuação,design,Kruskal–Wallis,0.51,0.77495
+Região,tempo_h,Kruskal–Wallis,7.191,0.12615
+Região,erros,Kruskal–Wallis,4.233,0.37537
+Região,design,Kruskal–Wallis,5.837,0.21167

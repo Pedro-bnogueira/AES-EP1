@@ -1,12 +1,31 @@
-,formacao,experiencia,kn_ref,kn_java
-Graduação,58.0,,,
-Mestrado,45.0,,,
-Especialização,17.0,,,
-3-5 anos,,51.0,,
-1-2 anos,,29.0,,
-6+ anos,,25.0,,
-< 1 ano,,15.0,,
-Básico,,,41.0,32.0
-Razoável,,,37.0,56.0
-Avançado,,,27.0,23.0
-Nenhum,,,15.0,9.0
+Variável,Categoria,Contagem,Percentual (%)
+AreaAtuacao,Indústria,63,52.5
+AreaAtuacao,Academia,33,27.5
+AreaAtuacao,Estudante,24,20.0
+FaixaEtaria,<25,49,40.8
+FaixaEtaria,25-34,49,40.8
+FaixaEtaria,35-44,18,15.0
+FaixaEtaria,45,4,3.3
+Genero,Masculino,83,69.2
+Genero,Feminino,36,30.0
+Genero,Não-binário,1,0.8
+Regiao,Sudeste,62,51.7
+Regiao,Nordeste,33,27.5
+Regiao,Centro-Oeste,12,10.0
+Regiao,Sul,9,7.5
+Regiao,Norte,4,3.3
+experiencia,3-5 anos,51,42.5
+experiencia,1-2 anos,29,24.2
+experiencia,6+ anos,25,20.8
+experiencia,< 1 ano,15,12.5
+formacao,Graduação,58,48.3
+formacao,Mestrado,45,37.5
+formacao,Especialização,17,14.2
+kn_java,Razoável,56,46.7
+kn_java,Básico,32,26.7
+kn_java,Avançado,23,19.2
+kn_java,Nenhum,9,7.5
+kn_ref,Básico,41,34.2
+kn_ref,Razoável,37,30.8
+kn_ref,Avançado,27,22.5
+kn_ref,Nenhum,15,12.5
